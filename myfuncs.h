@@ -1,6 +1,8 @@
 #ifndef MYFUNCS_H
 #define MYFUNCS_H
 #include <string>
+#include <iostream>
+#include <limits>
 
 long max_square(long* numbers, long len);
 
