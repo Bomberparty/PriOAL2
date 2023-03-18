@@ -5,7 +5,7 @@ int min_sum, int max_product, int count_even,
 int count_double_odd, int count_squares, int count_odd_squares, std::string& filename) {
     std::ofstream output_file(filename);
     if (!output_file) {
-        throw std::runtime_error("Не удалось открыть файл " + filename + " для записи!");
+        throw std::runtime_error("Не удалось открыть файл output.txt для записи!");
     }
 
     output_file << "Максимальный квадрат: " << max_square << '\n';

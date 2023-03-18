@@ -2,6 +2,7 @@
 #define MY_FUNCTIONS_H
 
 #include <cmath>
+#include <climits>
 
 int max_square(int a[], int n);
 int max_cube(int a[], int n);

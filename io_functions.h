@@ -7,7 +7,7 @@
 #include <vector>
 #include <stdexcept>
 
-std::vector<int> get_array();
+std::vector<int> get_array_from_console();
 
 std::vector<int> get_array_from_file();
 

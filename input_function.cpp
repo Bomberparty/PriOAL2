@@ -1,6 +1,6 @@
 #include "io_functions.h"
 
-std::vector<int> get_array() {
+std::vector<int> get_array_from_console() {
     std::string input;
     bool valid_input = false;
     std::vector<int> arr;
@@ -14,7 +14,7 @@ std::vector<int> get_array() {
         bool first_num = true;
         bool negative_num = false;
         while (ss >> num) {
-            if (first_num && num > 0) {
+            if (first_num && num < 0) {
                 std::cout << "Ошибка ввода: первый элемент должен быть положительным!\n";
                 break;
             }

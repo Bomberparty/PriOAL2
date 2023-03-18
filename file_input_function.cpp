@@ -3,7 +3,7 @@
 std::vector<int> get_array_from_file() {
     std::ifstream input_file("input.txt");
     if (!input_file) {
-        throw std::runtime_error("Не удалось открыть файл " + filename);
+        throw std::runtime_error("Не удалось открыть файл input.txt. Проверьте его целостность или создайте в директории с программой");
     }
 
     std::string line;
