@@ -16,7 +16,7 @@ std::vector<int> get_array_from_file() {
         bool first_num = true;
         bool negative_num = false;
         while (ss >> num) {
-            if (first_num && num > 0) {
+            if (first_num && num < 0) {
                 throw std::runtime_error("Ошибка в файле: первый элемент должен быть положительным!");
             }
             if (num < 0) {
