@@ -4,6 +4,7 @@ std::vector<int> get_array_from_console() {
     std::string input;
     bool valid_input = false;
     std::vector<int> arr;
+    std::vector<int> arri;
 
     while (!valid_input) {
         std::cout << "Введите элементы массива через пробел (первый элемент положительный, в массиве должен быть хотя бы один отрицательный): ";
@@ -31,7 +32,16 @@ std::vector<int> get_array_from_console() {
         } else {
             valid_input = true;
         }
+
+        for(int i = 0; i < arr.size(); i++) {
+            if (arr[i] > 0) { 
+                arri.push_back(arr[i]);
+            }
+            else {
+                break;
+            }
+        }
     }
 
-    return arr;
+    return arri;
 }

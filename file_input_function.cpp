@@ -9,6 +9,7 @@ std::vector<int> get_array_from_file() {
     std::string line;
     bool valid_input = false;
     std::vector<int> arr;
+    std::vector<int> arri;
 
     while (!valid_input && std::getline(input_file, line)) {
         std::stringstream ss(line);
@@ -37,5 +38,13 @@ std::vector<int> get_array_from_file() {
         throw std::runtime_error("Ошибка чтения файла: файл пуст или содержит некорректные данные!");
     }
 
-    return arr;
+    for (int i =0; i< arr.size(); i++) {
+        if(arr[i] > 0) {
+            arri.push_back(arr[i]);
+        }else {
+            break;
+        }
+    }
+
+    return arri;
 }
